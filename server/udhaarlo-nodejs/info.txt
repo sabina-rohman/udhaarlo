@@ -1,0 +1,7 @@
+Node start from terminal:-
+----------------------------
+npm run dev
+
+Find react / node running process:-
+------------------------------------
+ps aux | grep udhaarlo

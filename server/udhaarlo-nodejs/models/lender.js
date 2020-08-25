@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var lenderSchema = new mongoose.Schema({
-    lenderId: String,
+    id: String,
     name: String
 });
 

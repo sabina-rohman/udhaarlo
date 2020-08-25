@@ -10,6 +10,7 @@ var mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var borrowersRouter = require('./routes/borrowers');
 var lendersRouter = require('./routes/lenders');
+var transactionsRouter = require('./routes/transactions');
 
 var app = express();
 
@@ -27,9 +28,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// routes#############################
 app.use('/', indexRouter);
 app.use('/borrowers', borrowersRouter);
 app.use('/lenders', lendersRouter);
+app.use('/transactions', transactionsRouter);
+// routes ends########################
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

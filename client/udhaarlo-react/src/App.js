@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Lenders from './components/lenders';
 import Borrowers from './components/borrowers';
+import Navbar from './components/navbar';
 
 class App extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar />
         <Lenders lenders={this.state.lenders} />
         <Borrowers borrowers={this.state.borrowers} />
       </div>

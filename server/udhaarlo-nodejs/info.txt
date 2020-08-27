@@ -2,6 +2,10 @@ Node start from terminal:-
 ----------------------------
 npm run dev
 
+React.js start from terminal:-
+-------------------------------
+npm start
+
 Find react / node running process:-
 ------------------------------------
 ps aux | grep udhaarlo
